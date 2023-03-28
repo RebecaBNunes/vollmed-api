@@ -5,5 +5,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
-	UserDetails findByLogin(String username); //Long: tipo da primary key
+	UserDetails findByLogin(String login); //método que faz a consulta do usuario no banco de dados
+
 }
