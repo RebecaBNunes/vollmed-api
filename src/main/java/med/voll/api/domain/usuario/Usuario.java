@@ -33,6 +33,8 @@ public class Usuario implements UserDetails {
 	private Long id;
 	private String login;
 	private String senha;
+	
+	//pensar numa solucao para trabalhar com perfis de usuarios
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		return List.of(new SimpleGrantedAuthority("ROLE_USER"));
